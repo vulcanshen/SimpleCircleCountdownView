@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5VG-zV-l0f">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleCircleCountdownView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRf-ML-svt" customClass="SimpleCircleCountdownView" customModule="SimpleCircleCountdownView" customModuleProvider="target">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="2Wx-65-JdM"/>
+                                    <constraint firstAttribute="height" constant="300" id="KaR-QC-sB3"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGd-7N-Hvs">
+                                <rect key="frame" x="241.5" y="520" width="117" height="30"/>
+                                <state key="normal" title="Start Countdown">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionStartCountdown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z2Q-s7-CM8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="DRf-ML-svt" secondAttribute="centerY" id="1br-Vj-dHU"/>
+                            <constraint firstAttribute="centerX" secondItem="DRf-ML-svt" secondAttribute="centerX" id="NGw-P3-nMx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aGd-7N-Hvs" secondAttribute="bottom" constant="50" id="YXh-ts-PzE"/>
+                            <constraint firstAttribute="centerX" secondItem="aGd-7N-Hvs" secondAttribute="centerX" id="tk5-MY-2rT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cdvCountdown" destination="DRf-ML-svt" id="9sw-CY-sAb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="H2v-Bf-pBV">
+            <objects>
+                <viewController id="5VG-zV-l0f" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="57o-6K-8Al"/>
+                        <viewControllerLayoutGuide type="bottom" id="rS2-du-RIQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3yM-Op-9QX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4k-vD-y8h" customClass="SimpleCircleCountdownView" customModule="SimpleCircleCountdownView" customModuleProvider="target">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="W8m-J3-8lD"/>
+                                    <constraint firstAttribute="height" constant="300" id="tAD-lU-cgS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="C4k-vD-y8h" secondAttribute="centerY" id="U9P-uf-HL3"/>
+                            <constraint firstAttribute="centerX" secondItem="C4k-vD-y8h" secondAttribute="centerX" id="cch-dP-adm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yKt-Z5-wdI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470" y="1214"/>
+        </scene>
+    </scenes>
+</document>
