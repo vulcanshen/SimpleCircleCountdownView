@@ -28,6 +28,6 @@
 
 ![drag it into your storyboard](https://github.com/shenyun2304/SimpleCircleCountdownView/blob/master/img6-2.png)
 
-6.trigger countdown in code
+6.reset it(optional) and trigger countdown in code
 
 ![drag it into your storyboard](https://github.com/shenyun2304/SimpleCircleCountdownView/blob/master/img7.png)
